@@ -22,6 +22,12 @@ class RAdam(Adam):
 
     Arguments
     ---------
+        lr: float >= 0. Learning rate, default 0.001.
+        beta_1: float, (0, 1). Generally close to 1.
+        beta_2: float, (0, 1). Generally close to 1.
+        epsilon: float >= 0. Fuzz factor, a negligible value (
+            e.g. 1e-8), defaults to `K.epsilon()`.
+        decay: float >= 0. Learning rate decay over each update.
 
     References
     ----------
